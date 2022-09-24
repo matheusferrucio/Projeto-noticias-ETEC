@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1: #0d1b2a;
+    --cor2: #1b263b;
+    --cor3: #415a77;
+    --cor4: #778da9;
+    --cor-texto: #353535;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ---------- formatação do header ---------- */
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--cor1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+header .container .logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+header .container .titulo-header {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+header .container nav .btn-hamburguer i {
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+header .container nav .btn-hamburguer i:hover {
+    background-color: var(--cor2);
+}
+
+/* ---------- formatação container notícias e card notícias ---------- */
+main .container .container-noticias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+main .container .container-noticias .card-noticia {
+    position: relative;
+    width: 32%;
+    height: 450px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    box-shadow: 0 0 6px rgba(0,0,0, .2);
+    background-color: white;
+    transition: all .3s ease;
+}
+main .container .container-noticias .card-noticia:hover {
+    box-shadow: 0 0 12px rgba(0,0,0, .5);
+}
+
+main .container .container-noticias .card-noticia .img-noticia {
+    width: 100%;
+    height: 230px;
+}
+main .container .container-noticias .card-noticia .img-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+main .container .container-noticias .card-noticia .noticia-conteudo {
+    width: 100%;
+    padding: 10px;
+    color: var(--cor-texto);
+}
+main .container .container-noticias .card-noticia .noticia-conteudo h3 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+main .container .container-noticias .card-noticia .noticia-conteudo p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+main .container .container-noticias .card-noticia .saiba-mais {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+main .container .container-noticias .card-noticia .saiba-mais a {
+    border-radius: 10px;
+    padding: 8px 20px;
+    background-color: var(--cor1);
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all .4s ease;
+}
+main .container .container-noticias .card-noticia .saiba-mais a:hover {
+    background-color: var(--cor3);
+}
+
+/* ---------- formatação do footer ---------- */
+footer {
+    width: 100%;
+    background-color: var(--cor1);
+    height: 10vh;
+}
+
+footer .container .footer {
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+}
+
+/* ---------- responsivo ---------- */
+@media screen and (max-width: 880px){
+    main .container .container-noticias .card-noticia {
+        width: 48%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    header .container .logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    header .container .titulo-header {
+        color: white;
+        font-size: 0.9em;
+    }
+
+    main .container .container-noticias {
+        padding: 30px 10px;
+    }
+
+    main .container .container-noticias .card-noticia {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    footer .container .footer {
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        color: white;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 360px){
+    header .container .logo img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    header .container .titulo-header {
+        color: white;
+        font-size: 0.6em;
+    }
+
+    header .container nav .btn-hamburguer i {
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 10px;
+        transition: .4s ease;
+    }
+
+    main .container .container-noticias .card-noticia .noticia-conteudo h3 {
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+    main .container .container-noticias .card-noticia .noticia-conteudo p {
+        font-size: 0.8em;
+        text-align: justify;
+    }
+
+    footer .container .footer {
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        color: white;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 270px){
+    header .container .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .container .titulo-header {
+        /* padding-left: 12px; */
+        /* display: none; */
+        font-size: 0.5em;
+        display: none;
+    }
+
+    header .container nav .btn-hamburguer {
+        padding-right: 8px;
+    }
+
+    main .container .container-noticias .card-noticia .saiba-mais {
+        height: 60px;
+    }
+
+    main .container .container-noticias .card-noticia .saiba-mais a {
+        padding: 5px 10px;
+        font-size: 1em;
+    }
+
+    footer .container .footer {
+        width: 100%;
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        color: white;
+        font-size: 0.5em;
+    }
+}

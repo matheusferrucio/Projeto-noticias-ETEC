@@ -1,0 +1,87 @@
+:root {
+    --cor1: #0d1b2a;
+    --cor2: #1b263b;
+    --cor3: #415a77;
+    --cor4: #778da9;
+    --cor-texto: #353535;
+}
+
+header .container .logo a {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ---------- formatação foto notícia ---------- */
+main .foto-noticia {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+main .foto-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .foto-noticia .overlay-titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .foto-noticia .overlay-titulo h1 {
+    font-size: 3.8em;
+    letter-spacing: 2px;
+}
+main .foto-noticia .overlay-titulo p {
+    font-size: 1.5em;
+}
+
+main > .container {
+    padding: 50px 0;
+}
+
+main > .container .container-noticia {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 20px;
+    border: 1px solid rgb(204, 203, 203);
+    box-shadow: 0 0 6px rgba(110, 108, 108, 0.411);
+    text-indent: 2em;
+    text-align: justify;
+    color: var(--cor-texto);
+    font-size: 1.2em;
+}
+
+main > .container .container-noticia p{
+    padding: 10px 0;
+}
+
+main > .container .container-noticia .img-noticia {
+    width: 50%;
+    padding-top: 40%;
+    background-color: silver;
+    /* height: 50vh;*/
+    margin: 40px auto;
+
+    background-image: url('../imagens/bolsonaro2.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+/* main > .container .container-noticia .img-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
