@@ -7,39 +7,16 @@
         <title>Notícias ETEC</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/62e5760e2b.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="imagens/logo.png" alt="logo site">
-                </div>
-                <div class="titulo-header">
-                    <h1>NOTÍCIAS ETEC</h1>
-                </div>
-                <nav>
-                    <div class="btn-hamburguer">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
-                </nav>
-            </div>
-        </header>
+        <?php
+            include('header.php')
+        ?>
 
         <main>
             <div class="container">
                 <div class="container-noticias">
-                    <!-- <div class="card-noticia">
-                        <div class="img-noticia">
-                            <img src="imagens/bolsonaro.jpg" alt="">
-                        </div>
-                        <div class="noticia-conteudo">
-                            <h3>Bolsonaro ganha as eleiçoes 2022</h3>
-                            <p>Bolsonaro ganha as eleições mais uma vez e cidadão vão as ruas comemorar a vitória de Bolsonaro</p>
-                        </div>
-                        <div class="saiba-mais">
-                            <a href="#">Saiba mais</a>
-                        </div>
-                    </div> -->
                     <?php
                         for($i = 0; $i < 9; $i++){
                             echo "<div class='card-noticia'>
@@ -51,7 +28,7 @@
                                 <p>Bolsonaro ganha as eleições mais uma vez e cidadão vão as ruas comemorar a vitória de Bolsonaro</p>
                             </div>
                             <div class='saiba-mais'>
-                                <a href='paginas-html/pagina-noticia.php'>Saiba mais</a>
+                                <a href='pagina-noticia.php'>Saiba mais</a>
                             </div>
                         </div>";
                         }

@@ -5,32 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nome da notícia</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/pagina-noticia.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pagina-noticia.css">
         <script src="https://kit.fontawesome.com/62e5760e2b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="../index.php">
-                        <img src="../imagens/logo.png" alt="logo site">
-                    </a>
-                </div>
-                <div class="titulo-header">
-                    <h1>NOTÍCIAS ETEC</h1>
-                </div>
-                <nav>
-                    <div class="btn-hamburguer">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
+        <?php
+            include('header.php');
+        ?>
         <main>
             <div class="foto-noticia">
-                <img src="../imagens/bolsonaro.jpg" alt="foto bolsonaro">
+                <img src="imagens/bolsonaro.jpg" alt="foto bolsonaro">
                 <div class="overlay-titulo">
                     <h1>Bolsonaro ganha eleições 2022</h1>
                     <p>Bolsonaro ganha eleições 2022 e salva o Brasil do nove dedos</p>
@@ -45,6 +30,10 @@
                     <div class="img-noticia">
                         <!-- <img src="../imagens/bolsonaro2.jpg" alt="imagem no meio da notícia"> -->
                     </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque sapiente commodi, saepe id amet earum, aut nihil impedit perferendis dolorum. Hic sapiente, sunt voluptatem voluptatibus sequi porro rem dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum consequatur officiis dignissimos excepturi quibusdam enim tenetur vel obcaecati placeat, deserunt suscipit omnis illum pariatur doloremque consequuntur libero? Dolorum, quae?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque sapiente commodi, saepe id amet earum, aut nihil impedit perferendis dolorum. Hic sapiente, sunt voluptatem voluptatibus sequi porro rem dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum consequatur officiis dignissimos excepturi quibusdam enim tenetur vel obcaecati placeat, deserunt suscipit omnis illum pariatur doloremque consequuntur libero? Dolorum, quae?</p>
+
                 </div>
             </div>
         </main>

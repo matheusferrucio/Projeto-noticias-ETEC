@@ -15,6 +15,11 @@
     --cor-texto: #353535;
 }
 
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1280px;
@@ -34,7 +39,7 @@ header .container {
     align-items: center;
 }
 
-header .container .logo {
+/* header .container .logo {
     height: 15vh;
     display: flex;
     align-items: center;
@@ -44,6 +49,12 @@ header .container .logo img {
     width: 80px;
     height: 80px;
     object-fit: cover;
+} */
+header .container .logo {
+    height: 15vh;
+    width: 80px;
+    background-image: url('../imagens/logo.png');
+    background-size: 100% 100%;
 }
 
 header .container .titulo-header {
@@ -52,6 +63,10 @@ header .container .titulo-header {
     align-items: center;
     color: white;
     font-size: 1.3em;
+}
+
+header .container nav .btn-hamburguer {
+    position: relative;
 }
 
 header .container nav .btn-hamburguer i {
@@ -63,6 +78,57 @@ header .container nav .btn-hamburguer i {
     transition: .4s ease;
 }
 header .container nav .btn-hamburguer i:hover {
+    background-color: var(--cor2);
+}
+
+header .container nav .btn-hamburguer .links-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -280px;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+header .container nav .btn-hamburguer .links-header.active {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+    left: -310px;
+}
+
+header .container nav .btn-hamburguer .links-header ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+}
+
+header .container nav .btn-hamburguer .links-header ul li {
+    width: 100px;
+    /* padding: 0 15px; */
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-align: center;
+}
+
+header .container nav .btn-hamburguer .links-header ul li:last-of-type {
+    width: 190px;
+}
+
+header .container nav .btn-hamburguer .links-header ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+header .container nav .btn-hamburguer .links-header ul li:hover {
     background-color: var(--cor2);
 }
 

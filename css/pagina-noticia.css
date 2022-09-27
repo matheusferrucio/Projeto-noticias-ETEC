@@ -6,6 +6,12 @@
     --cor-texto: #353535;
 }
 
+header .container .logo {
+    width: 80px;
+    background-image: url('../imagens/logo.png');
+    background-size: 100% 100%;
+}
+
 header .container .logo a {
     height: 15vh;
     display: flex;
